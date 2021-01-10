@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>&lt;just-time&gt;</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 2em;
+		}
+
+		.with-seconds {
+			color: #06a400;
+		}
+
+		.without-seconds {
+			color: #1100ff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="with-seconds">
+		Right now is
+		<just-time></just-time>.
+	</div>
+	<div class="without-seconds">
+		Right now is
+		<just-time hide-seconds></just-time>.
+	</div>
+
+	<script type="module">
+		import('./dist/index.es.js').catch((error) =>
+			import(
+				'https://unpkg.com/just-time-webcomponent@latest/dist/index.es.js'
+			)
+		)
+	</script>
+</body>
+
+</html>
