@@ -5,10 +5,12 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>&lt;just-time&gt;</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=block" rel="stylesheet" />
 	<style>
 		body {
 			text-align: center;
-			font-family: sans-serif;
+			font-variant-numeric: tabular-nums;
+			font-family: 'Open Sans', sans-serif;
 			font-size: 2em;
 		}
 
@@ -25,11 +27,11 @@
 <body>
 	<div class="with-seconds">
 		Right now is
-		<just-time></just-time>.
+		<just-time>00:00:00</just-time>.
 	</div>
 	<div class="without-seconds">
 		Right now is
-		<just-time hide-seconds></just-time>.
+		<just-time hide-seconds>00:00</just-time>.
 	</div>
 
 	<script type="module">

@@ -18,3 +18,7 @@ Right now is <just-time></just-time>.
 ```html
 Right now is <just-time hide-seconds></just-time>.
 ```
+
+## Prevent size jumps
+
+Set `font-variant-numeric: tabular-nums` in your CSS. Use a font supporting this like [Google fonts Open Sans](https://fonts.google.com/specimen/Open+Sans).
